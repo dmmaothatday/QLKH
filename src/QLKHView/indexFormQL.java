@@ -44,7 +44,7 @@ public class indexFormQL extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        btnNguoiDung.setIcon(new javax.swing.ImageIcon("C:\\Users\\letha\\OneDrive\\Pictures\\user.png")); // NOI18N
+        btnNguoiDung.setIcon(new javax.swing.ImageIcon(getClass().getResource("/QLKHView/icon/user.png"))); // NOI18N
         btnNguoiDung.setText("Quản lý người dùng");
         btnNguoiDung.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -52,7 +52,7 @@ public class indexFormQL extends javax.swing.JFrame {
             }
         });
 
-        btnPhieuNhap.setIcon(new javax.swing.ImageIcon("C:\\Users\\letha\\OneDrive\\Pictures\\form.png")); // NOI18N
+        btnPhieuNhap.setIcon(new javax.swing.ImageIcon(getClass().getResource("/QLKHView/icon/form.png"))); // NOI18N
         btnPhieuNhap.setText("Quản lý phiếu nhập");
         btnPhieuNhap.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -60,7 +60,7 @@ public class indexFormQL extends javax.swing.JFrame {
             }
         });
 
-        btnPhieuXuat.setIcon(new javax.swing.ImageIcon("C:\\Users\\letha\\OneDrive\\Pictures\\form.png")); // NOI18N
+        btnPhieuXuat.setIcon(new javax.swing.ImageIcon(getClass().getResource("/QLKHView/icon/form.png"))); // NOI18N
         btnPhieuXuat.setText("Quản lý phiếu xuất");
         btnPhieuXuat.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -68,7 +68,7 @@ public class indexFormQL extends javax.swing.JFrame {
             }
         });
 
-        btnSanPham.setIcon(new javax.swing.ImageIcon("C:\\Users\\letha\\OneDrive\\Pictures\\database.png")); // NOI18N
+        btnSanPham.setIcon(new javax.swing.ImageIcon(getClass().getResource("/QLKHView/icon/database.png"))); // NOI18N
         btnSanPham.setText("Quản lý sản phẩm");
         btnSanPham.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -76,7 +76,7 @@ public class indexFormQL extends javax.swing.JFrame {
             }
         });
 
-        btnKhu.setIcon(new javax.swing.ImageIcon("C:\\Users\\letha\\OneDrive\\Pictures\\area.png")); // NOI18N
+        btnKhu.setIcon(new javax.swing.ImageIcon(getClass().getResource("/QLKHView/icon/area.png"))); // NOI18N
         btnKhu.setText("Quản lý khu");
         btnKhu.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -84,7 +84,7 @@ public class indexFormQL extends javax.swing.JFrame {
             }
         });
 
-        btnDay.setIcon(new javax.swing.ImageIcon("C:\\Users\\letha\\OneDrive\\Pictures\\row.png")); // NOI18N
+        btnDay.setIcon(new javax.swing.ImageIcon(getClass().getResource("/QLKHView/icon/row.png"))); // NOI18N
         btnDay.setText("Quản lý dãy");
         btnDay.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -92,7 +92,7 @@ public class indexFormQL extends javax.swing.JFrame {
             }
         });
 
-        btnNhaCungCap.setIcon(new javax.swing.ImageIcon("C:\\Users\\letha\\OneDrive\\Pictures\\supply-chain.png")); // NOI18N
+        btnNhaCungCap.setIcon(new javax.swing.ImageIcon(getClass().getResource("/QLKHView/icon/supply-chain.png"))); // NOI18N
         btnNhaCungCap.setText("Quản lý nhà cung cấp");
         btnNhaCungCap.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -100,7 +100,7 @@ public class indexFormQL extends javax.swing.JFrame {
             }
         });
 
-        btnCuaHang.setIcon(new javax.swing.ImageIcon("C:\\Users\\letha\\OneDrive\\Pictures\\shop.png")); // NOI18N
+        btnCuaHang.setIcon(new javax.swing.ImageIcon(getClass().getResource("/QLKHView/icon/shop.png"))); // NOI18N
         btnCuaHang.setText("Quản lý cửa hàng");
         btnCuaHang.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -121,7 +121,7 @@ public class indexFormQL extends javax.swing.JFrame {
         lblQuanLy.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         lblQuanLy.setText("QUẢN LÝ");
 
-        btnLoaiSanPham.setIcon(new javax.swing.ImageIcon("C:\\Users\\letha\\OneDrive\\Pictures\\database (1).png")); // NOI18N
+        btnLoaiSanPham.setIcon(new javax.swing.ImageIcon(getClass().getResource("/QLKHView/icon/type of database.png"))); // NOI18N
         btnLoaiSanPham.setText("Quản lý loại sản phẩm");
         btnLoaiSanPham.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

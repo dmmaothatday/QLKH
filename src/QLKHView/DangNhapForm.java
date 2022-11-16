@@ -43,7 +43,7 @@ public class DangNhapForm extends javax.swing.JFrame {
 
         lblMatKhau.setText("Mật khẩu");
 
-        btnDangNhap.setIcon(new javax.swing.ImageIcon("C:\\Users\\letha\\OneDrive\\Pictures\\enter.png")); // NOI18N
+        btnDangNhap.setIcon(new javax.swing.ImageIcon(getClass().getResource("/QLKHView/icon/enter.png"))); // NOI18N
         btnDangNhap.setText("Đăng nhập");
         btnDangNhap.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -66,7 +66,7 @@ public class DangNhapForm extends javax.swing.JFrame {
         lblDangNhap.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
         lblDangNhap.setText("ĐĂNG NHẬP");
 
-        btnThoat.setIcon(new javax.swing.ImageIcon("C:\\Users\\letha\\OneDrive\\Pictures\\exit.png")); // NOI18N
+        btnThoat.setIcon(new javax.swing.ImageIcon(getClass().getResource("/QLKHView/icon/exit.png"))); // NOI18N
         btnThoat.setText("Thoát");
         btnThoat.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

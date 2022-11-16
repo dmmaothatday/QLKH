@@ -145,7 +145,7 @@
         <Component class="javax.swing.JButton" name="btnThem">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\letha\OneDrive\Pictures\add (1).png"/>
+              <Image iconType="3" name="/QLKHView/icon/add .png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Th&#xea;m"/>
           </Properties>
@@ -156,7 +156,7 @@
         <Component class="javax.swing.JButton" name="btnTim">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\letha\OneDrive\Pictures\findicon.png"/>
+              <Image iconType="3" name="/QLKHView/icon/find.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="T&#xec;m"/>
           </Properties>
@@ -167,7 +167,7 @@
         <Component class="javax.swing.JButton" name="btnXoa">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\letha\OneDrive\Pictures\delete (2).png"/>
+              <Image iconType="3" name="/QLKHView/icon/delete.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="X&#xf3;a"/>
           </Properties>
@@ -178,7 +178,7 @@
         <Component class="javax.swing.JButton" name="btnCapNhat">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\letha\OneDrive\Pictures\edit.png"/>
+              <Image iconType="3" name="/QLKHView/icon/edit.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="C&#x1ead;p nh&#x1ead;t"/>
           </Properties>
