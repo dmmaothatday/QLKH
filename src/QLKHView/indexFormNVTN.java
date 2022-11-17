@@ -40,9 +40,11 @@ public class indexFormNVTN extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         lblKho.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
+        lblKho.setIcon(new javax.swing.ImageIcon(getClass().getResource("/QLKHView/icon/bycicle.png"))); // NOI18N
         lblKho.setText("QUẢN LÝ KHO XE ĐẠP");
 
         lblNhanVienTiepNhan.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        lblNhanVienTiepNhan.setIcon(new javax.swing.ImageIcon(getClass().getResource("/QLKHView/icon/reception.png"))); // NOI18N
         lblNhanVienTiepNhan.setText("NHÂN VIÊN TIẾP NHẬN");
 
         btnPhieuXuat.setIcon(new javax.swing.ImageIcon("C:\\Users\\letha\\OneDrive\\Pictures\\form.png")); // NOI18N
@@ -77,6 +79,7 @@ public class indexFormNVTN extends javax.swing.JFrame {
             }
         });
 
+        btnDangXuat.setIcon(new javax.swing.ImageIcon(getClass().getResource("/QLKHView/icon/exit.png"))); // NOI18N
         btnDangXuat.setText("Đăng xuất");
         btnDangXuat.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -95,7 +98,7 @@ public class indexFormNVTN extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(256, 256, 256)
                 .addComponent(lblKho)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 184, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 116, Short.MAX_VALUE)
                 .addComponent(btnDangXuat)
                 .addGap(35, 35, 35))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
@@ -126,7 +129,7 @@ public class indexFormNVTN extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnCuaHang, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btnPhieuXuat, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(120, Short.MAX_VALUE))
+                .addContainerGap(115, Short.MAX_VALUE))
         );
 
         pack();
