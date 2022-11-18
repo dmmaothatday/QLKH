@@ -66,6 +66,7 @@ public class QLSanPhamForm extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         lblSanPham.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
+        lblSanPham.setIcon(new javax.swing.ImageIcon(getClass().getResource("/QLKHView/icon/database.png"))); // NOI18N
         lblSanPham.setText("QUẢN LÝ SẢN PHẨM");
 
         jPanel1.setBorder(javax.swing.BorderFactory.createEtchedBorder());
@@ -235,6 +236,7 @@ public class QLSanPhamForm extends javax.swing.JFrame {
         ));
         jScrollPane2.setViewportView(tbSanPham);
 
+        btnQuayLai.setIcon(new javax.swing.ImageIcon(getClass().getResource("/QLKHView/icon/return.png"))); // NOI18N
         btnQuayLai.setText("Quay lại");
         btnQuayLai.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

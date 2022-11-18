@@ -51,6 +51,7 @@ public class QLKhuForm extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         lblKhu.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
+        lblKhu.setIcon(new javax.swing.ImageIcon(getClass().getResource("/QLKHView/icon/area.png"))); // NOI18N
         lblKhu.setText("QUẢN LÝ KHU ");
 
         jPanel1.setBorder(javax.swing.BorderFactory.createEtchedBorder());
@@ -148,6 +149,7 @@ public class QLKhuForm extends javax.swing.JFrame {
         ));
         jScrollPane2.setViewportView(tbKhu);
 
+        btnQuayLai.setIcon(new javax.swing.ImageIcon(getClass().getResource("/QLKHView/icon/return.png"))); // NOI18N
         btnQuayLai.setText("Quay lại");
         btnQuayLai.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -160,10 +162,10 @@ public class QLKhuForm extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(78, 400, Short.MAX_VALUE)
+                .addGap(78, 366, Short.MAX_VALUE)
                 .addComponent(lblKhu)
-                .addGap(304, 304, 304)
-                .addComponent(btnQuayLai, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(299, 299, 299)
+                .addComponent(btnQuayLai)
                 .addGap(22, 22, 22))
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()

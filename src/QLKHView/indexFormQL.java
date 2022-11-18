@@ -109,8 +109,10 @@ public class indexFormQL extends javax.swing.JFrame {
         });
 
         lblKho.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
+        lblKho.setIcon(new javax.swing.ImageIcon(getClass().getResource("/QLKHView/icon/bycicle.png"))); // NOI18N
         lblKho.setText("QUẢN LÝ KHO XE ĐẠP");
 
+        btnDangXuat.setIcon(new javax.swing.ImageIcon(getClass().getResource("/QLKHView/icon/exit.png"))); // NOI18N
         btnDangXuat.setText("Đăng xuất");
         btnDangXuat.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -119,6 +121,7 @@ public class indexFormQL extends javax.swing.JFrame {
         });
 
         lblQuanLy.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        lblQuanLy.setIcon(new javax.swing.ImageIcon(getClass().getResource("/QLKHView/icon/manager.png"))); // NOI18N
         lblQuanLy.setText("QUẢN LÝ");
 
         btnLoaiSanPham.setIcon(new javax.swing.ImageIcon(getClass().getResource("/QLKHView/icon/type of database.png"))); // NOI18N
@@ -199,7 +202,7 @@ public class indexFormQL extends javax.swing.JFrame {
                         .addComponent(btnPhieuXuat, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
                         .addComponent(btnPhieuNhap, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(124, Short.MAX_VALUE))
+                .addContainerGap(119, Short.MAX_VALUE))
         );
 
         pack();

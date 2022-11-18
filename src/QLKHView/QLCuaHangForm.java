@@ -7,6 +7,11 @@ package QLKHView;
 import QLKHModel.*;
 import QLKHController.*;
 import static QLKHView.indexFormQL.temp;
+import java.awt.HeadlessException;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.sql.Connection;
 import java.util.ArrayList;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
@@ -56,6 +61,7 @@ public class QLCuaHangForm extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         lblCuaHang.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
+        lblCuaHang.setIcon(new javax.swing.ImageIcon(getClass().getResource("/QLKHView/icon/shop.png"))); // NOI18N
         lblCuaHang.setText("QUẢN LÝ CỬA HÀNG");
 
         jPanel1.setBorder(javax.swing.BorderFactory.createEtchedBorder());
@@ -76,13 +82,15 @@ public class QLCuaHangForm extends javax.swing.JFrame {
 
         btnThem.setIcon(new javax.swing.ImageIcon(getClass().getResource("/QLKHView/icon/add .png"))); // NOI18N
         btnThem.setText("Thêm");
+        btnThem.setMaximumSize(new java.awt.Dimension(100, 50));
+        btnThem.setMinimumSize(new java.awt.Dimension(100, 50));
         btnThem.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnThemActionPerformed(evt);
             }
         });
 
-        btnTim.setIcon(new javax.swing.ImageIcon("C:\\Users\\letha\\OneDrive\\Pictures\\findicon.png")); // NOI18N
+        btnTim.setIcon(new javax.swing.ImageIcon(getClass().getResource("/QLKHView/icon/find.png"))); // NOI18N
         btnTim.setText("Tìm");
         btnTim.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -90,7 +98,7 @@ public class QLCuaHangForm extends javax.swing.JFrame {
             }
         });
 
-        btnXoa.setIcon(new javax.swing.ImageIcon("C:\\Users\\letha\\OneDrive\\Pictures\\delete (2).png")); // NOI18N
+        btnXoa.setIcon(new javax.swing.ImageIcon(getClass().getResource("/QLKHView/icon/delete.png"))); // NOI18N
         btnXoa.setText("Xóa");
         btnXoa.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -118,7 +126,7 @@ public class QLCuaHangForm extends javax.swing.JFrame {
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addGap(201, 201, 201)
-                                .addComponent(btnThem))
+                                .addComponent(btnThem, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                 .addGroup(jPanel1Layout.createSequentialGroup()
                                     .addGap(139, 139, 139)
@@ -168,7 +176,7 @@ public class QLCuaHangForm extends javax.swing.JFrame {
                             .addComponent(txtDiaChi, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 86, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnThem)
+                    .addComponent(btnThem, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btnXoa)
                     .addComponent(btnCapNhat)
                     .addComponent(btnTim))
@@ -193,6 +201,7 @@ public class QLCuaHangForm extends javax.swing.JFrame {
         });
         jScrollPane2.setViewportView(tbCuaHang);
 
+        btnQuayLai.setIcon(new javax.swing.ImageIcon(getClass().getResource("/QLKHView/icon/return.png"))); // NOI18N
         btnQuayLai.setText("Quay lại");
         btnQuayLai.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -246,17 +255,41 @@ public class QLCuaHangForm extends javax.swing.JFrame {
 
     private void btnThemActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnThemActionPerformed
         // TODO add your handling code here:
+        Connection conn = BaseModel.getConnection();
         CuaHangModel ch = new CuaHangModel();
         ch.setMaCH(txtMaCuaHang.getText());
         ch.setTenCH(txtTenCuaHang.getText());
         ch.setDiaChiCH(txtDiaChi.getText());
         ch.setSdtCH(txtSoDienThoai.getText());
-      
-        if(CuaHangController.doAddCuaHang(ch)){
-           JOptionPane.showMessageDialog(rootPane, "Thêm cửa hàng thành công.");
-        }else{
-           JOptionPane.showMessageDialog(rootPane, "Thêm cửa hàng thất bại.");
+        
+        try{
+            if(txtMaCuaHang.getText().equals("") || txtTenCuaHang.getText().equals("") ||
+                txtSoDienThoai.getText().equals("") || txtDiaChi.getText().equals("")){
+                JOptionPane.showMessageDialog(rootPane,"Bạn cần nhập đủ dữ liệu.");
+            } else{
+                StringBuffer sb= new StringBuffer();
+                String sql_check_pk="SELECT ma_cua_hang FROM CuaHang WHERE ma_cua_hang='"+txtMaCuaHang.getText()+"' ";
+                Statement st=conn.createStatement();
+                ResultSet rs=st.executeQuery(sql_check_pk);
+                if(rs.next()){
+                    sb=append("Cửa hàng đã tồn tại.");
+                }
+                if(sb.length()>0){
+                    JOptionPane.showMessageDialog(rootPane, sb.toString());
+                }
+                if(CuaHangController.doAddCuaHang(ch)){
+                    JOptionPane.showMessageDialog(rootPane, "Thêm cửa hàng thành công.");
+                    loadTableCuaHang();
+                }else{
+                    JOptionPane.showMessageDialog(rootPane, "Thêm cửa hàng thất bại.");
+                }
+                     }
+        } catch (SQLException e) {
+            e.printStackTrace();
         }
+            
+        
+        
     }//GEN-LAST:event_btnThemActionPerformed
 
     private void btnTimActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTimActionPerformed
@@ -347,4 +380,8 @@ public class QLCuaHangForm extends javax.swing.JFrame {
     private javax.swing.JTextField txtSoDienThoai;
     private javax.swing.JTextField txtTenCuaHang;
     // End of variables declaration//GEN-END:variables
+
+    private StringBuffer append(String cửa_hàng_đã_tồn_tại) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
 }

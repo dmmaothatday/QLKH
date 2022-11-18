@@ -53,6 +53,7 @@ public class QLDayForm extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         lblDay.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
+        lblDay.setIcon(new javax.swing.ImageIcon(getClass().getResource("/QLKHView/icon/row.png"))); // NOI18N
         lblDay.setText("QUẢN LÝ DÃY ");
 
         jPanel1.setBorder(javax.swing.BorderFactory.createEtchedBorder());
@@ -171,6 +172,7 @@ public class QLDayForm extends javax.swing.JFrame {
         ));
         jScrollPane2.setViewportView(tbDay);
 
+        btnQuayLai.setIcon(new javax.swing.ImageIcon(getClass().getResource("/QLKHView/icon/return.png"))); // NOI18N
         btnQuayLai.setText("Quay lại");
         btnQuayLai.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

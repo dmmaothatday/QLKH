@@ -70,6 +70,9 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Segoe UI" size="36" style="0"/>
         </Property>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/QLKHView/icon/supply-chain.png"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="QU&#x1ea2;N L&#xdd; NH&#xc0; CUNG C&#x1ea4;P"/>
       </Properties>
     </Component>
@@ -310,6 +313,9 @@
     </Container>
     <Component class="javax.swing.JButton" name="btnQuayLai">
       <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/QLKHView/icon/return.png"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Quay l&#x1ea1;i"/>
       </Properties>
       <Events>

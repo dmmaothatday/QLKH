@@ -64,6 +64,7 @@ public class QLNguoiDungForm extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         lblNguoiDung.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
+        lblNguoiDung.setIcon(new javax.swing.ImageIcon(getClass().getResource("/QLKHView/icon/user.png"))); // NOI18N
         lblNguoiDung.setText("QUẢN LÝ NGƯỜI DÙNG");
 
         tbNguoiDung.setModel(new javax.swing.table.DefaultTableModel(
@@ -233,6 +234,7 @@ public class QLNguoiDungForm extends javax.swing.JFrame {
                 .addGap(37, 37, 37))
         );
 
+        btnQuayLai.setIcon(new javax.swing.ImageIcon(getClass().getResource("/QLKHView/icon/return.png"))); // NOI18N
         btnQuayLai.setText("Quay lại");
         btnQuayLai.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -245,7 +247,7 @@ public class QLNguoiDungForm extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(30, 282, Short.MAX_VALUE)
+                .addGap(30, 214, Short.MAX_VALUE)
                 .addComponent(lblNguoiDung)
                 .addGap(138, 138, 138)
                 .addComponent(btnQuayLai)

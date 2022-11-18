@@ -58,6 +58,7 @@ public class QLPhieuNhapForm extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         lblPhieuNhap.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
+        lblPhieuNhap.setIcon(new javax.swing.ImageIcon(getClass().getResource("/QLKHView/icon/form.png"))); // NOI18N
         lblPhieuNhap.setText("QUẢN LÝ PHIẾU NHẬP");
 
         jPanel1.setBorder(javax.swing.BorderFactory.createEtchedBorder());
@@ -191,6 +192,7 @@ public class QLPhieuNhapForm extends javax.swing.JFrame {
         ));
         jScrollPane2.setViewportView(tbPhieuNhap);
 
+        btnQuayLai.setIcon(new javax.swing.ImageIcon(getClass().getResource("/QLKHView/icon/return.png"))); // NOI18N
         btnQuayLai.setText("Quay lại");
         btnQuayLai.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

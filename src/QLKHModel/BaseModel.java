@@ -13,6 +13,7 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class BaseModel {
+    
     public static Connection getConnection() {
         Connection conn = null;
         try {

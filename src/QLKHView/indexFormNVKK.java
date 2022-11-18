@@ -38,11 +38,14 @@ public class indexFormNVKK extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         lblKho.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
+        lblKho.setIcon(new javax.swing.ImageIcon(getClass().getResource("/QLKHView/icon/bycicle.png"))); // NOI18N
         lblKho.setText("QUẢN LÝ KHO XE ĐẠP");
 
         lblNhanVienKiemKe.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        lblNhanVienKiemKe.setIcon(new javax.swing.ImageIcon(getClass().getResource("/QLKHView/icon/inventory.png"))); // NOI18N
         lblNhanVienKiemKe.setText("NHÂN VIÊN KIỂM KÊ");
 
+        btnDangXuat.setIcon(new javax.swing.ImageIcon(getClass().getResource("/QLKHView/icon/exit.png"))); // NOI18N
         btnDangXuat.setText("Đăng xuất");
         btnDangXuat.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -74,7 +77,7 @@ public class indexFormNVKK extends javax.swing.JFrame {
             }
         });
 
-        btnLoaiSanPham.setIcon(new javax.swing.ImageIcon("C:\\Users\\letha\\OneDrive\\Pictures\\database (1).png")); // NOI18N
+        btnLoaiSanPham.setIcon(new javax.swing.ImageIcon(getClass().getResource("/QLKHView/icon/type of database.png"))); // NOI18N
         btnLoaiSanPham.setText("Quản lý loại sản phẩm");
         btnLoaiSanPham.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -87,47 +90,47 @@ public class indexFormNVKK extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(294, 294, 294)
                 .addComponent(lblKho)
-                .addGap(166, 166, 166)
-                .addComponent(btnDangXuat)
-                .addGap(36, 36, 36))
+                .addGap(112, 112, 112)
+                .addComponent(btnDangXuat))
             .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(368, 368, 368)
-                        .addComponent(lblNhanVienKiemKe))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(163, 163, 163)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addComponent(btnKhu, javax.swing.GroupLayout.PREFERRED_SIZE, 581, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(btnDay, javax.swing.GroupLayout.PREFERRED_SIZE, 581, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(btnSanPham, javax.swing.GroupLayout.PREFERRED_SIZE, 581, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btnLoaiSanPham, javax.swing.GroupLayout.PREFERRED_SIZE, 581, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(176, Short.MAX_VALUE))
+                .addGap(360, 360, 360)
+                .addComponent(lblNhanVienKiemKe))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(163, 163, 163)
+                .addComponent(btnKhu, javax.swing.GroupLayout.PREFERRED_SIZE, 581, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(163, 163, 163)
+                .addComponent(btnDay, javax.swing.GroupLayout.PREFERRED_SIZE, 581, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(163, 163, 163)
+                .addComponent(btnSanPham, javax.swing.GroupLayout.PREFERRED_SIZE, 581, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(163, 163, 163)
+                .addComponent(btnLoaiSanPham, javax.swing.GroupLayout.PREFERRED_SIZE, 581, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(41, 41, 41)
-                        .addComponent(lblKho))
-                    .addGroup(layout.createSequentialGroup()
                         .addGap(25, 25, 25)
-                        .addComponent(btnDangXuat)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(btnDangXuat)
+                        .addGap(48, 48, 48))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(lblKho)
+                        .addGap(18, 18, 18)))
                 .addComponent(lblNhanVienKiemKe)
-                .addGap(68, 68, 68)
+                .addGap(53, 53, 53)
                 .addComponent(btnKhu, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(27, 27, 27)
                 .addComponent(btnDay, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(31, 31, 31)
                 .addComponent(btnSanPham, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(27, 27, 27)
-                .addComponent(btnLoaiSanPham, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(95, Short.MAX_VALUE))
+                .addComponent(btnLoaiSanPham, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
         pack();

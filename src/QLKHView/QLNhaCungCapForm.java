@@ -55,6 +55,7 @@ public class QLNhaCungCapForm extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         lblNhaCungCap.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
+        lblNhaCungCap.setIcon(new javax.swing.ImageIcon(getClass().getResource("/QLKHView/icon/supply-chain.png"))); // NOI18N
         lblNhaCungCap.setText("QUẢN LÝ NHÀ CUNG CẤP");
 
         jPanel1.setBorder(javax.swing.BorderFactory.createEtchedBorder());
@@ -192,6 +193,7 @@ public class QLNhaCungCapForm extends javax.swing.JFrame {
         ));
         jScrollPane2.setViewportView(tbNhaCungCap);
 
+        btnQuayLai.setIcon(new javax.swing.ImageIcon(getClass().getResource("/QLKHView/icon/return.png"))); // NOI18N
         btnQuayLai.setText("Quay lại");
         btnQuayLai.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

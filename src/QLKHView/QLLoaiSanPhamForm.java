@@ -50,6 +50,7 @@ public class QLLoaiSanPhamForm extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         lblLoaiSP.setFont(new java.awt.Font("Segoe UI", 0, 36)); // NOI18N
+        lblLoaiSP.setIcon(new javax.swing.ImageIcon(getClass().getResource("/QLKHView/icon/type of database.png"))); // NOI18N
         lblLoaiSP.setText("QUẢN LÝ LOẠI SẢN PHẨM ");
 
         jPanel1.setBorder(javax.swing.BorderFactory.createEtchedBorder());
@@ -153,6 +154,7 @@ public class QLLoaiSanPhamForm extends javax.swing.JFrame {
         ));
         jScrollPane2.setViewportView(tbLoaiSP);
 
+        btnQuayLai.setIcon(new javax.swing.ImageIcon(getClass().getResource("/QLKHView/icon/return.png"))); // NOI18N
         btnQuayLai.setText("Quay lại");
         btnQuayLai.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -165,7 +167,7 @@ public class QLLoaiSanPhamForm extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(53, 446, Short.MAX_VALUE)
+                .addGap(53, 378, Short.MAX_VALUE)
                 .addComponent(lblLoaiSP)
                 .addGap(264, 264, 264)
                 .addComponent(btnQuayLai)
